@@ -1,0 +1,24 @@
+{
+  "name": "phpv8test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js  --progress --hide-modules --watch --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "laravel-mix": "^2.1.11",
+    "vue": "^2.5.16",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.16"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
